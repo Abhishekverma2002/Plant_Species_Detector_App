@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/firstplant" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/camera"
+                android:layout_width="193dp"
+                android:layout_height="91dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_layout"
+                android:drawableStart="@drawable/ic_baseline_camera_alt_24"
+                android:text="Camera"
+                app:icon="@drawable/ic_baseline_camera_alt_24" />
+
+            <Button
+                android:id="@+id/gallery"
+                android:layout_width="191dp"
+                android:layout_height="98dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_layout"
+                android:text="Gallery"
+                app:icon="@android:drawable/ic_menu_gallery" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="274dp"
+            android:background="@drawable/button_layout"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="20dp"
+            android:textColor="#A1073B"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/predict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Predict" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
